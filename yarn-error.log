@@ -1,0 +1,61 @@
+Arguments: 
+  /home/miguel/.nvm/versions/node/v9.10.1/bin/node /home/miguel/.nvm/versions/node/v9.10.1/bin/yarn json:server
+
+PATH: 
+  /home/miguel/.nvm/versions/node/v9.10.1/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/miguel/.fzf/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.10.1
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "users",
+    "version": "1.0.0",
+    "description": "GraphQL test",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon server.js",
+      "json:server": "json-server --watch db.json"
+    },
+    "keywords": [
+      "graphql"
+    ],
+    "author": "Miguel Bolivar",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.16.3",
+      "express-graphql": "^0.6.12",
+      "graphql": "^14.0.2",
+      "json-server": "^0.14.0",
+      "lodash": "^4.17.10",
+      "nodemon": "^1.18.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c json-server --watch db.json
+  Directory: /home/miguel/Courses/graphql/users
+  Output:
+  
+      at ProcessTermError.MessageError (/home/miguel/.nvm/versions/node/v9.10.1/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/home/miguel/.nvm/versions/node/v9.10.1/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/home/miguel/.nvm/versions/node/v9.10.1/lib/node_modules/yarn/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:180:13)
+      at maybeClose (internal/child_process.js:936:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
